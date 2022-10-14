@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     @Override
-    public void onMapClick(@android.support.annotation.NonNull @NonNull LatLng point) {
+    public void onMapClick( @NonNull LatLng point) {
         if (destinationMarker != null){
             map.removeMarker(destinationMarker);
         }
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         getRoute(originPosition, destinationPosition);
 
         startButton.setEnabled(true);
-        startButton.setBackgroundResource(com.mapbox.mapboxsdk.R.color.mapbox_blue);
+        startButton.setBackgroundResource(R.color.teal_200);
     }
 
     private void getRoute(Point origin, Point destination){
